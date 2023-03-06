@@ -1,0 +1,56 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="mian-page-container">
+      <!-- Sidebar -->
+      <section class="sidebar-container">
+        <nav class="navbar-container">
+          <h2 class="navbar-title">Statistic of Student results</h2>
+          <ul class="nav-link-list">
+            <li>Total Days <span id="total-days">0</span></li>
+            <li>Missed Lessons <span id="missed-days">0</span></li>
+            <li>Average mark <span id="average-mark">0</span></li>
+            <li>Total Students <span id="total-students">0</span></li>
+          </ul>
+        </nav>
+      </section>
+
+      <!-- Table Section -->
+      <section class="table-container">
+        <div class="table-title">
+          <h6>Group A</h6>
+
+          <!-- Input Form -->
+          <form id="student-add">
+            <input
+              type="text"
+              name="studentName"
+              id="student-fullname"
+              placeholder="Student FullName"
+            />
+            <button type="submit" class="submit-btn">Add<img src="img/add-student.png" alt="add Student" class="add-student-img"></button>
+          </form>
+
+          <!-- Add Day & Remove day -->
+          <div class="buttons-container">
+            <button type="button" id="day-adder">Add Day <img src="img/add-day.png" alt="add day" class="day-adder"></button>
+            <button type="button" id="day-remover">Remove Last Day <img src="img/remove-day.png" alt="remove day" class="day-remover"></button>
+          </div>
+        </div>
+
+        <div class="table-bg">
+          <table id="main-table"></table>
+        </div>
+      </section>
+    </header>
+
+    <!-- Script -->
+    <script src="mian.js"></script>
+  </body>
+</html>

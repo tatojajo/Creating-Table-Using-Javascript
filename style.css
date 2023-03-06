@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+#mian-page-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+/* 
+* Sidebar
+*/
+
+.navbar-container {
+  background-color: #3345e1;
+  height: 100vh;
+  padding: 20px;
+  width: 250px;
+  color: white;
+}
+
+.navbar-container-avtive {
+  display: none;
+}
+
+.navbar-title {
+  font-size: 25px;
+  font-weight: 600;
+  padding: 8px;
+  border-bottom: 2px solid;
+}
+
+.nav-link-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.nav-link-list > li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ebbe0d;
+  padding: 2px;
+  border-bottom: 1px solid;
+}
+.nav-link-list > li > span {
+  color: red;
+}
+
+/* 
+* Table
+*/
+
+.table-container {
+  background-color: #ebbe0d;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  border-left: 2px solid;
+}
+.table-container-active {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: #2eb872;
+  align-items: center;
+  justify-content: center;
+}
+
+.table-title {
+  background-color: #eaf6f6;
+  width: 80%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top: 2px solid #e80932;
+  border-left: 2px solid #e80932;
+  border-right: 2px solid #e80932;
+  border-bottom: 2px solid;
+}
+.table-title > h6 {
+  color: #111f4d;
+  font-weight: 900;
+  font-size: 18px;
+  border-bottom: 2px solid #111f4d;
+  padding: 8px 8px 0px 8px;
+}
+#student-add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #42b883;
+  padding: 15px;
+  border-radius: 10px;
+}
+#student-fullname {
+  outline: none;
+  padding: 4px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: 2px solid #111f4d;
+}
+#student-fullname::placeholder {
+  font-weight: 500;
+  color: black;
+  opacity: 0.8;
+}
+#student-fullname:focus::placeholder {
+  color: transparent;
+}
+#student-fullname::placeholder {
+  font-weight: 500;
+  color: black;
+  opacity: 0.8;
+}
+.submit-btn {
+  display: flex;
+  border: transparent;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-weight: 900;
+  background-color: #a2c11c;
+  border-bottom: 2px solid #111f4d;
+}
+.add-student-img {
+  width: 20px;
+  border: transparent;
+}
+.buttons-container {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#day-adder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  background-color: #2eb872;
+  color: white;
+  font-weight: 700;
+  border: transparent;
+  gap: 5px;
+  border-radius: 5px;
+}
+.day-adder {
+  width: 20px;
+  padding: 1px;
+}
+
+#day-remover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  background-color: #f83e4b;
+  color: white;
+  font-weight: 700;
+  border: transparent;
+  border-radius: 5px;
+  gap: 5px;
+}
+
+.day-remover {
+  width: 20px;
+  padding: 1px;
+}
+
+.table-bg {
+  background-color: #8dc6ff;
+  width: 80%;
+  padding: 8px;
+  border-left: 2px solid #e80932;
+  border-right: 2px solid #e80932;
+  border-bottom: 2px solid #e80932;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+#main-table {
+  padding: 8px;
+  display: table;
+  display: block;
+  overflow-x: scroll;
+  table-layout: auto;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+#main-table-active {
+  height: 80vh;
+  display: table;
+  display: block;
+  overflow-x: scroll;
+  table-layout: auto;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.thead-head-row {
+  display: table-row;
+}
+
+.table-head {
+  background-color: #95a5a6;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.average-point {
+  text-align: center;
+}
+.mark {
+  text-align: center;
+}
+
+th {
+  border: solid 2px;
+}
+td {
+  border: 1px solid white;
+}
+
+tr:nth-child(even) {
+  background-color: #ceb121;
+}
+th > button{
+  padding: 3px;
+}
